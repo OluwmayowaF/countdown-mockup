@@ -33,6 +33,12 @@ main {
     flex-direction: column;
     justify-content: center;
     padding: 10px;
+    padding: 0 4em;
+}
+
+.launching-section::before {
+    background-color: royalblue;
+    height: 100%;
 }
 
 .login-section {
@@ -48,15 +54,20 @@ main {
 }
 
 .dash-container {
-    animation: moveup 2s infinite;
-    position: relative;
+    background-color: #fff;
+    border-radius: 0 70% 70% 0;
+    z-index: 1000;
+    margin-right: -8px;
+    overflow-x: hidden;
 }
 
 .dash {
     background-color: #B1F4CE;
-    width: 15px;
+    width: 30px;
     height: 1px;
-    margin-bottom: 300%
+    margin-bottom: 3.2em;
+    animation: moveup 2s infinite;
+    position: relative;
 }
 
 @keyframes moveup {
@@ -75,6 +86,7 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 100px);
     column-gap: 20px;
+    padding: 2em;
 }
 
 .timer-div div {
@@ -84,6 +96,15 @@ main {
     padding: 30px 10px;
     border-radius: 4px;
     box-shadow: 4px 4px 8px 8px rgba(202, 201, 201, 0.3);
+}
+
+.timer-div div p:first-child {
+    font-size: 1.5em;
+    color: #216740;
+}
+
+.timer-div div p {
+    font-size: 0.5em;
 }
 
 a {
