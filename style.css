@@ -21,6 +21,7 @@ main {
     width: 60%;
     height: 60%;
     border-radius: 10px;
+    box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.5);
 }
 
 .launching-section {
@@ -31,7 +32,7 @@ main {
     text-align: center;
     width: 30%;
     height: 100%;
-    background-color: #B1F4CE;
+    background-color: rgba(177, 244, 206, 0.3);
     border-radius: 0 10px 10px 0;
 }
 
@@ -48,7 +49,7 @@ main {
     background-color: #B1F4CE;
     width: 15px;
     height: 1px;
-    margin-bottom: 40px;
+    margin-bottom: 300%
 }
 
 @keyframes moveup {
@@ -90,4 +91,5 @@ a {
     font-size: 0.5em;
     padding: 8px;
     border-radius: 5px;
+    margin-left: 2em;
 }
