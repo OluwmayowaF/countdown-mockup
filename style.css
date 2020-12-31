@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #85BA9F;
+    /*  background-color: #85BA9F;*/
+    background: radial-gradient( #B1F4CE, #85BA9F, #48946C);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -36,9 +37,15 @@ main {
     padding: 0 4em;
 }
 
-.launching-section::before {
-    background-color: royalblue;
-    height: 100%;
+h2 {
+    color: #216740;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.opening {
+    font-size: 0.85em;
+    color: #216740;
 }
 
 .login-section {
@@ -55,15 +62,16 @@ main {
 
 .dash-container {
     background-color: #fff;
-    border-radius: 0 70% 70% 0;
+    border-radius: 0 80% 80% 0;
     z-index: 1000;
-    margin-right: -8px;
+    padding-right: 20px;
+    margin-right: -10px;
     overflow-x: hidden;
 }
 
 .dash {
     background-color: #B1F4CE;
-    width: 30px;
+    width: 20px;
     height: 1px;
     margin-bottom: 3.2em;
     animation: moveup 2s infinite;
