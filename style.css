@@ -97,17 +97,17 @@ input[type='submit'] {
     background-color: #B1F4CE;
     width: 20px;
     height: 1px;
-    margin-bottom: 3.2em;
-    animation: moveup 2s infinite;
+    margin-bottom: 3em;
+    animation: moveup 1s infinite;
     position: relative;
 }
 
 @keyframes moveup {
     from {
-        top: 0px;
+        top: 3em;
     }
     to {
-        top: 20px;
+        top: 0px;
     }
 }
 
