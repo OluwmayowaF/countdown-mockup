@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #85BA9F;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.launching-section {
+    padding: 10px;
+}
+
+.login-section {
+    text-align: center;
+    width: 30%;
+    height: 100%;
+    background-color: #B1F4CE;
+    border-radius: 0 10px 10px 0;
+}
+
+.dash-container {
+    animation: moveup 2s infinite;
+    position: relative;
+}
+
+.dash {
+    background-color: #B1F4CE;
+    width: 15px;
+    height: 1px;
+    margin-bottom: 40px;
+}
+
+@keyframes moveup {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 10px;
+    }
+    to {
+        top: 20px;
+    }
+}
+
+@font-face {
+    font-family: 'digital-7';
+    src: url('./fonts/digital-7.ttf');
+}
+
+.timer-div {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    column-gap: 20px;
+}
+
+.timer-div div {
+    background-color: white;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 30px 10px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px 8px rgba(202, 201, 201, 0.3);
+}
+
+.clock-area {
+    margin: auto;
+    width: 50%;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.clock-container {
+    align-items: center;
+    border: 1px solid red;
+    box-shadow: 5px 5px 1px rgba(0, 0, 90, 0.5);
+    border-radius: 2em;
+}
+
+#clock {
+    color: red;
+    font-size: 2em;
+    font-family: 'digital-7', sans-serif;
+    font-weight: 100;
+    text-shadow: 1px 1px 2px red;
+    text-align: center;
+}
+
+.activity-area {
+    display: grid;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+}
+
+#activity {
+    width: 20em;
+    border-radius: 1em;
+}
