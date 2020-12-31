@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
+    font-family: 'Inter', sans-serif;
     background-color: #85BA9F;
     height: 100vh;
     width: 100%;
@@ -33,6 +35,10 @@ main {
     border-radius: 0 10px 10px 0;
 }
 
+.login-section nav {
+    padding-top: 1em;
+}
+
 .dash-container {
     animation: moveup 2s infinite;
     position: relative;
@@ -57,11 +63,6 @@ main {
     }
 }
 
-@font-face {
-    font-family: 'digital-7';
-    src: url('./fonts/digital-7.ttf');
-}
-
 .timer-div {
     display: grid;
     grid-template-columns: repeat(4, 100px);
@@ -77,39 +78,16 @@ main {
     box-shadow: 4px 4px 8px 8px rgba(202, 201, 201, 0.3);
 }
 
-.clock-area {
-    margin: auto;
-    width: 50%;
-    padding: 0;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    align-self: center;
+a {
+    text-decoration: none;
+    color: #48946C;
+    font-size: 0.85em;
 }
 
-.clock-container {
-    align-items: center;
-    border: 1px solid red;
-    box-shadow: 5px 5px 1px rgba(0, 0, 90, 0.5);
-    border-radius: 2em;
-}
-
-#clock {
-    color: red;
-    font-size: 2em;
-    font-family: 'digital-7', sans-serif;
-    font-weight: 100;
-    text-shadow: 1px 1px 2px red;
-    text-align: center;
-}
-
-.activity-area {
-    display: grid;
-    grid-template-columns: 40px 50px auto 50px 40px;
-    grid-template-rows: 25% 100px auto;
-}
-
-#activity {
-    width: 20em;
-    border-radius: 1em;
+#signup-btn {
+    color: #fff;
+    background-color: #48946C;
+    font-size: 0.5em;
+    padding: 8px;
+    border-radius: 5px;
 }
