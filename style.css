@@ -41,13 +41,14 @@ main {
 
 h2 {
     color: #216740;
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin-bottom: 0.5em;
     font-weight: 500;
 }
 
 .opening {
-    font-size: 0.75em;
+    font-weight: 300;
+    font-size: 0.8em;
     color: #216740;
 }
 
@@ -68,6 +69,7 @@ input[type='submit'] {
     margin-left: 2em;
     border: none;
     width: 15%;
+    box-shadow: 4px 4px 8px 2px rgba(184, 180, 180, 0.5);
 }
 
 .login-section {
@@ -103,9 +105,6 @@ input[type='submit'] {
 @keyframes moveup {
     from {
         top: 0px;
-    }
-    to {
-        top: 10px;
     }
     to {
         top: 20px;

@@ -3,7 +3,7 @@ const getTime = () => {
     const countDownDate = new Date(new Date().setDate(new Date().getDate() + 14)).getTime();
    
         
-    const updatePerSecond = setInterval(function() {
+    const updatePerSecond = setInterval(()=> {
 
         // Get today's date and time
         const now = new Date();
@@ -34,9 +34,14 @@ const getTime = () => {
     }, 1000);
 }
 getTime();
-setTimeout(() => {
+setInterval(() => {
+    document.getElementById('days').innerHTML = '14';
+    document.getElementById('hours').innerHTML = '24';
+
+    document.getElementById('minutes').innerHTML = '00';
+    document.getElementById('seconds').innerHTML = '60';
     getTime();
-}, 60000)
+}, 61000)
 
 
 
