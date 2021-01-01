@@ -34,14 +34,14 @@ const getTime = () => {
     }, 1000);
 }
 getTime();
-setInterval(() => {
+/*setInterval(() => {
     document.getElementById('days').innerHTML = '14';
     document.getElementById('hours').innerHTML = '24';
 
     document.getElementById('minutes').innerHTML = '00';
     document.getElementById('seconds').innerHTML = '60';
     getTime();
-}, 61000)
+}, 61000)*/
 
 
 
