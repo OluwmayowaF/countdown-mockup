@@ -18,11 +18,11 @@ const getTime = () => {
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         
-        document.getElementById('days').innerHTML = days;
-        document.getElementById('hours').innerHTML = hours;
+        document.querySelector('#days').innerHTML = days;
+        document.querySelector('#hours').innerHTML = hours;
 
-        document.getElementById('minutes').innerHTML = minutes;
-        document.getElementById('seconds').innerHTML = seconds;
+        document.querySelector('#minutes').innerHTML = minutes;
+        document.querySelector('#seconds').innerHTML = seconds;
 
 
 
@@ -34,14 +34,7 @@ const getTime = () => {
     }, 1000);
 }
 getTime();
-/*setInterval(() => {
-    document.getElementById('days').innerHTML = '14';
-    document.getElementById('hours').innerHTML = '24';
 
-    document.getElementById('minutes').innerHTML = '00';
-    document.getElementById('seconds').innerHTML = '60';
-    getTime();
-}, 61000)*/
 
 
 
